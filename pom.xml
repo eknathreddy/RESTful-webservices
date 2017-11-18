@@ -33,7 +33,26 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		
+		<!-- Security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		<!-- application monitoring -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- HAL - Hypertext Application Language 
+			 hyperlink btw resources in your API-->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
+		
+		<!-- For creating hyperlinks -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
@@ -44,12 +63,14 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+		
+		<!-- For XML format support -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.dataformat</groupId>
 			<artifactId>jackson-dataformat-xml</artifactId>
 		</dependency>
 		
+		<!-- For API documentation -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
